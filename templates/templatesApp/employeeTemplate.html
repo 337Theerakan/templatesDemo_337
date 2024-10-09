@@ -1,0 +1,19 @@
+<html>
+    
+    <head>
+        <title>Employee Template</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>Employee </h1>
+        
+        <ol>
+            <li><strong>ID:</strong> {{ id }}</li>
+            <li><strong>Name:</strong> {{ name }}</li>
+            <li><strong>Salary:</strong> {{ salary }}</li>
+        </ol>
+
+        <img src="{% static 'images/oberon.jpg' %}" alt="Employee Photo">
+    </body>
+</html>
